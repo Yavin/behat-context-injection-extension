@@ -1,0 +1,20 @@
+{
+    "name": "yavin/behat-context-injection-extension",
+    "description": "ability to inject other contexts to steps methods",
+    "license": "MIT",
+    "authors": [
+        {"name": "Yavin", "email": "yavin.yavin@gmail.com"}
+    ],
+    "require": {
+        "behat/behat": "^3.1"
+    },
+    "autoload":{
+        "psr-4":{
+            "Yavin\\Behat\\Extension\\ContextInjection\\": "src",
+            "Yavin\\Test\\Behat\\Extension\\ContextInjection\\": "tests"
+        }
+    },
+    "config": {
+        "bin-dir": "bin"
+    }
+}

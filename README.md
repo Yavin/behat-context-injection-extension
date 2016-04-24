@@ -1,5 +1,7 @@
 # Behat context injection extension
 
+[![Build Status](https://travis-ci.org/Yavin/behat-context-injection-extension.svg?branch=master)](https://travis-ci.org/Yavin/behat-context-injection-extension)
+
 With this extension you can inject contexts into methods. It should work with Behat 3.1+
 
 ```php
@@ -8,7 +10,7 @@ class MyContext implements Context
     /**
      * @Then I can inject context as argument
      */
-    public function iCanInjectContextAsStandaloneArgument(MyOtherContextClass $myOtherContext)
+    public function iCanInjectContextAsArgument(MyOtherContextClass $myOtherContext)
     {
         $myOtherContext->someMethod();
     }
